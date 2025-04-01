@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int Sum(int arr[], const int SIZE);
@@ -17,15 +17,15 @@ int main()
 	int arr[SIZE];
 	int shift;
 	FillRand(arr, SIZE);
-	cout << "Èçíà÷àëüíûé ìàññèâ : \t";
+	cout << "Ð˜Ð·Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² : \t";
 	Print(arr, SIZE); cout << endl;
 	Sort(arr, SIZE);
-	cout << "Îòñîðòèðîâàííûé ìàññèâ : \t";
+	cout << "ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² : \t";
 	Print(arr, SIZE); cout << endl;
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà : " << Sum(arr, SIZE) << "\n\n";
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ : " << Arithmean(arr, SIZE) << "\n\n";
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå ìàññèâà : "<< MaxValue(arr, SIZE) << "\n\n";
-	cout << "Ìèíèìàëüíîå çíà÷åíèå ìàññèâà : " << MinValue(arr, SIZE) << "\n\n";
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° : " << Sum(arr, SIZE) << "\n\n";
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² : " << Arithmean(arr, SIZE) << "\n\n";
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° : "<< MaxValue(arr, SIZE) << "\n\n";
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° : " << MinValue(arr, SIZE) << "\n\n";
 }
 void FillRand(int arr[], const int SIZE)
 {
