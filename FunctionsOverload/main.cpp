@@ -2,10 +2,13 @@
 using namespace std;
 
 int Sum(int arr[], const int SIZE);
+double Sum(double arr[], const int SIZE);
 double Arithmean(int arr[], const int SIZE);
+double Arithmean(double arr[], const int SIZE);
 int MaxValue(int arr[], const int SIZE);
 int MinValue(int arr[], const int SIZE);
 void FillRand(int arr[], const int SIZE);
+void FillRand(double arr[], const int SIZE);
 void Print(int arr[], const int SIZE);
 void Sort(int arr[], const int SIZE);
 
@@ -27,6 +30,7 @@ int main()
 	cout << "Максимальное значение массива : "<< MaxValue(arr, SIZE) << "\n\n";
 	cout << "Минимальное значение массива : " << MinValue(arr, SIZE) << "\n\n";
 }
+
 void FillRand(int arr[], const int SIZE)
 {
 	for (int i = 0; i < SIZE; i++)
@@ -35,6 +39,16 @@ void FillRand(int arr[], const int SIZE)
 		arr[i] = rand() % 100;
     }
 }
+
+void FillRand(double arr[], const int SIZE)
+{
+	for (int i = 0; i < SIZE; i++)
+	{
+
+		arr[i] = rand() % 100;
+	}
+}
+
 void Print(int arr[], const int SIZE)
 {
 
@@ -45,6 +59,7 @@ void Print(int arr[], const int SIZE)
     }
 	cout << endl;
 }
+
 void Sort(int arr[], const int SIZE)
 {
 	for (int i = 0; i < SIZE; i++)
